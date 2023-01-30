@@ -1,41 +1,63 @@
-# ELK를 이용한 웹 해킹 로그 패턴 분석과 시각화
-     웹 해킹 종류 별 Snort Rull 작성 및 탐지
-     ELK Stack으로 로그 저장 및 분석, 시각화
-     
-## 진행 기간
-- 2021.12.29 ~ 2022.1.3
+## Snort를 이용한 로그 탐지 및 ELK를 이용한 웹 해킹 로그 패턴 분석과 시각화 
+
+### 주제 선정 이유
+![image](https://user-images.githubusercontent.com/110655823/215561030-58028bac-7129-40a8-9c73-6493c1539f3e.png)
 
 </br>
 
-## 팀 구성
-- 개발환경 구성 1명, Snort 구성 1명, ELK Stack 구성 1명
+### 프로젝트 개요
+![image](https://user-images.githubusercontent.com/110655823/215561131-1f67e866-ebac-43fa-9a35-eb0feec79c95.png)
 
 </br>
 
-## 사용 기술
-#### OS
-<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=Ubuntu&logoColor=white"> <!--Ubuntu-->
-#### IDS
-<img src="https://img.shields.io/badge/Snort-000000?style=flat-squarelogo=Snort&logoColor=white"> <!--Snort-->
-#### Monitoring
-<img src="https://img.shields.io/badge/Filebeat-005571?style=flat-square&logo=Filebeat&logoColor=white"> <!--Filebeat-->
-<img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=Elasticsearch&logoColor=white"> <!--Elasticsearch-->
-<img src="https://img.shields.io/badge/Logstash-005571?style=flat-square&logo=Logstash&logoColor=white"> <!--Logstash-->
-<img src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=Kibana&logoColor=white"> <!--Kibana-->
+### AS-IS, TO-BE
+![image](https://user-images.githubusercontent.com/110655823/215561231-290c7c2e-fa0e-4b19-86f1-87e72bbb5c9c.png)
+
+
+### 환경 구성
+#### Snort & Filebeat
+![image](https://user-images.githubusercontent.com/110655823/215556973-91ba27e6-e437-4401-b533-f74495578042.png)
+
+#### ELK Stack
+![image](https://user-images.githubusercontent.com/110655823/215557458-bdc586f3-253d-4f37-ad72-7a067b7d2c78.png)
 
 </br>
 
-## 상세 내용 
-### Infra Architecture
-![kibana](https://user-images.githubusercontent.com/110655823/215553517-70c4d9c2-11cd-4110-902b-a6ee3c84e09a.png)
-> - 총 탐지 로그, 시간당 로그 탐지 수, 웹 해킹별 탐지율, 공격자 IP를 Kibana 시각화
+### Snort Rule 및 로그 탐지
+#### SYN Scan Check
+![image](https://user-images.githubusercontent.com/110655823/215558940-58c7fc51-8bc4-4c47-bed8-85d4a77489cc.png)
 
-### - [Snort & ELK Stack](https://github.com/hyunjaebok/AWS_3Tier_Terraform_Project/tree/main/Terraform)
+#### Brute Force Attack
+![image](https://user-images.githubusercontent.com/110655823/215559193-1cb7c7fb-bca6-4fb4-b044-95341948d512.png)
+
+#### OS Coammand Injection
+![image](https://user-images.githubusercontent.com/110655823/215559346-2561473c-a89b-4db1-9a49-32e57e00a67e.png)
+
+#### CSRF Attack
+![image](https://user-images.githubusercontent.com/110655823/215559911-dc88b347-4050-48de-9ad4-b42105913942.png)
+
+#### Directory Traversal
+![image](https://user-images.githubusercontent.com/110655823/215560028-092e19f0-5cea-4283-8b3f-9b7836d6ced8.png)
+
+#### PHP File Upload
+![image](https://user-images.githubusercontent.com/110655823/215560134-51f22c4d-14f0-4667-a8a2-caa22cc1ebc4.png)
+
+#### Crooss-Site Scripting Attempt
+![image](https://user-images.githubusercontent.com/110655823/215560205-e265bc3c-60cb-4031-a55f-795e99f9bdec.png)
+
+#### SQL Injection
+![image](https://user-images.githubusercontent.com/110655823/215560327-6830d89f-c0ff-4735-aeb9-cb7b7218162d.png)
+
+#### Path Traversal
+![image](https://user-images.githubusercontent.com/110655823/215560487-eb27eab0-5da3-4109-91f3-2c3488488e81.png)
 
 </br>
 
-## 담당한 업무
-- Filebeat로 탐지한 웹 해킹 로그 파일을 실시간으로 수집하여 Logstash로 전달
-- Logstash로 수집한 웹 해킹 로그를 선정해서 Elasticserch에 인덱싱하여 전달
-- Elasticserch로 수집된 웹 해킹 로그를 저장소에 저장
-- Kibana로 웹 해킹 로그 시각화
+### Kibana DashBoard
+![kibana](https://user-images.githubusercontent.com/110655823/215560684-803f7576-61a3-45c3-a500-568a36e94b79.png)
+
+
+</br>
+
+### 기대 효과 및 결과
+![image](https://user-images.githubusercontent.com/110655823/215560906-5fc1f56a-1e62-4151-9d89-2c8cf517c2f8.png)
