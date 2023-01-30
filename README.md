@@ -30,7 +30,7 @@
 ![kibana](https://user-images.githubusercontent.com/110655823/215553517-70c4d9c2-11cd-4110-902b-a6ee3c84e09a.png)
 > - 총 탐지 로그, 시간당 로그 탐지 수, 웹 해킹별 탐지율, 공격자 IP를 Kibana 시각화
 
-### - [Snort & ELK Stack](https://github.com/hyunjaebok/AWS_3Tier_Terraform_Project/tree/main/Terraform)
+### - [Snort & ELK Stack](https://github.com/hyunjaebok/Snort_ELK_Project/tree/main/Snort%20%26%20ELK%20Stack)
 
 </br>
 
