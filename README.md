@@ -25,6 +25,14 @@
 
 </br>
 
+## 담당한 업무
+- Filebeat로 탐지한 웹 해킹 로그 파일을 실시간으로 수집하여 Logstash로 전달
+- Logstash로 수집한 웹 해킹 로그를 선정해서 Elasticserch에 인덱싱하여 전달
+- Elasticserch로 수집된 웹 해킹 로그를 저장소에 저장
+- Kibana로 웹 해킹 로그 시각화
+
+</br>
+
 ## 상세 내용 
 ### Infra Architecture
 ![kibana](https://user-images.githubusercontent.com/110655823/215553517-70c4d9c2-11cd-4110-902b-a6ee3c84e09a.png)
@@ -32,10 +40,3 @@
 
 ### - [Snort & ELK Stack](https://github.com/hyunjaebok/Snort_ELK_Project/tree/main/Snort%20%26%20ELK%20Stack)
 
-</br>
-
-## 담당한 업무
-- Filebeat로 탐지한 웹 해킹 로그 파일을 실시간으로 수집하여 Logstash로 전달
-- Logstash로 수집한 웹 해킹 로그를 선정해서 Elasticserch에 인덱싱하여 전달
-- Elasticserch로 수집된 웹 해킹 로그를 저장소에 저장
-- Kibana로 웹 해킹 로그 시각화
