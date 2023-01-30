@@ -66,4 +66,4 @@
 
 ---
 
-### [👈 Go back 👈](https://github.com/hyunjaebok/Snort_ELK_Project)
+### [👈 Go back](https://github.com/hyunjaebok/Snort_ELK_Project)
