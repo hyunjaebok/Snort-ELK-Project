@@ -34,7 +34,7 @@
 </br>
 
 ## 📖 상세 내용 
-### Infra Architecture
+### Kibana DashBoard
 ![kibana](https://user-images.githubusercontent.com/110655823/215553517-70c4d9c2-11cd-4110-902b-a6ee3c84e09a.png)
 > - 총 탐지 로그, 시간당 로그 탐지 수, 웹 해킹별 탐지율, 공격자 IP를 Kibana 시각화
 
